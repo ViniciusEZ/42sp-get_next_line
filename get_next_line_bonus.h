@@ -6,7 +6,7 @@
 /*   By: vfirmino <vfirmino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 19:40:20 by vfirmino          #+#    #+#             */
-/*   Updated: 2025/08/11 19:50:08 by vfirmino         ###   ########.fr       */
+/*   Updated: 2025/08/28 18:30:39 by vfirmino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,15 @@
 #  define BUFFER_SIZE 42
 # endif
 
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *s, int c);
-char	*ft_strdup(const char *s);
-char	*ft_strjoin(char *s1, const char *s2);
 size_t	ft_strclen(const char *s, char stop);
 char	*extract_line(char *str);
 char	*save_rest(char *str);
+char	*read_and_store(int fd, char *rest, char *buffer);
 char	*get_next_line(int fd);
+size_t	ft_strlen(const char *s);
+char	*ft_strchr(const char *s, int c);
+size_t	ft_strlcpy(char *dest, const char *src, size_t size);
+char	*ft_strdup(const char *s);
+char	*ft_strjoin(char *s1, const char *s2);
 
 #endif

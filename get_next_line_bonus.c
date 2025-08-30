@@ -6,7 +6,7 @@
 /*   By: vfirmino <vfirmino@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/11 19:40:45 by vfirmino          #+#    #+#             */
-/*   Updated: 2025/08/11 19:50:01 by vfirmino         ###   ########.fr       */
+/*   Updated: 2025/08/27 18:01:13 by vfirmino         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,7 +74,7 @@ char	*save_rest(char *str)
 	return (ptr);
 }
 
-static char	*read_and_store(int fd, char *rest, char *buffer)
+char	*read_and_store(int fd, char *rest, char *buffer)
 {
 	int	bytes;
 
